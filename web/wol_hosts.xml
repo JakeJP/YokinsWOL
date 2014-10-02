@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hosts>
+  <host name="PC1" mac-address="00:00:00:00:00:00" ip-address="192.168.0.100">
+    <wol broadcast-address="192.168.0.255" />
+  </host>
+  <host name="PC2" mac-address="00:00:00:00:00:00" ip-address="192.168.0.101" />
+  <host name="PC3" mac-address="00:00:00:00:00:00" ip-address="192.168.0.102" />
+</hosts>
