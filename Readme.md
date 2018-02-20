@@ -1,24 +1,26 @@
 
-#Yokin's Wake on LAN ASP.NET
+# Yokin's Wake on LAN ASP.NET
 
-Yokin's Wake on LAN is a small piece of ASP.NET program to manage some number of computers which are deployed in LAN to power of and get current power status.
+Yokin's Wake on LAN is a small piece of ASP.NET program to manage some number of computers
+which are deployed in LAN to power on and get current power status.
 
-##Features
+Making the page accessible from internet, this can also work as *Wake-On-WAN*.
+
+## Features
 
  - HTML base simple operation
  - Pinging to probe if the PC is on or off
  - Send Wake-on-LAN packet to turn the PC on
 
-##Demo
-visit our website http://www.yo-ki.com/Software/wol/
+![screen capture](https://user-images.githubusercontent.com/318651/36407316-ff266142-1640-11e8-8b93-782ace30cf9b.png)
 
-##Where to Work
+## Where to Work
 
 Microsoft IIS 6.0 or later ( where ASP.NET 4.0 is enabled)
 
-##How to Install
+## How to Install
 
-###1. place 2 files
+### 1. place 2 files
 place 2 files any location of web server.
 
  - Default.aspx
@@ -28,7 +30,7 @@ place 2 files any location of web server.
 
         static String XmlFilePath = "wol_hosts.xml";
 
-###2. add PCs in wol_hosts.xml file
+### 2. add PCs in wol_hosts.xml file
 
     <hosts>
       <host name="Computer Name 1"
@@ -41,10 +43,14 @@ place 2 files any location of web server.
 **name** and **mac-address** is always required. **ip-address** is optional and used to Ping.
 broadcast-address is used to limit the network range in the case the web server has 2 or more network interfaces and different subnetwork like global internet and local network.
 
-##Security Caution
+## Security Caution
 If the webserver is public, you might need to limit access to **Default.aspx** file and **wol_hosts.xml** file.
 
-##Public Domain (Unlicense)
+## History
+
+- v2.1	better design even with mobile. (2018-02-20)
+
+## Public Domain (Unlicense)
 
 
 This is free and unencumbered software released into the public domain.
