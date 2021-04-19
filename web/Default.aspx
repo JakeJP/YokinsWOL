@@ -196,7 +196,7 @@
                             if( result){
                                 buttons.removeClass("checking").addClass("green");
                             } else {
-                                buttons.removeClass("checking");
+                                buttons.removeClass("checking").removeClass("green");
                             }
                         },
                         function(result){
